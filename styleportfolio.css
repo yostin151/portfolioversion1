@@ -1,0 +1,86 @@
+.hidden {
+    display: none;
+}
+
+.gallery-link {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    margin-right: 15px; /* Adjust the margin as needed */
+    text-decoration: none;
+    color: #e10afe;
+    font-weight: bold;
+    font-size: 25px; /* Adjust the font size as needed */
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}.gallery-link:hover{
+    background-color: #2c87b8;
+}
+
+.link::after {
+    content: ' PORTFOLIO';
+    opacity: 0;
+    animation: showText 2s forwards;
+}
+
+.link.hidden::after {
+    display: none;
+}
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: column;
+    flex-wrap: center;
+    margin-top: 20px;
+}
+
+.gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hide all galleries */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+.gallery-item {
+    flex-basis: calc(25% - 10px); /* Adjust the width of each item as needed */
+    margin: 30px;
+    box-sizing:border-box
+}
+
+.contenido {
+    background-image: url('images/BACKGROUND.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px; /* Add padding as needed */
+
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd; /* Add a border for better separation */
+    border-radius: 5px;
+    cursor: zoom-in;
+    transition: transform 0.5s;
+}
+
+.gallery-item img:hover {
+    transform: scale(3);
+    cursor: zoom-out;
+}
+

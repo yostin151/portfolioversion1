@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="styleportfolio.css">
+    <script src="portfoliotab.js" defer></script>
+  
+</head>
+
+<body link="red" alink="green" vlink="#583759" bgcolor="#DFD3E3" style="font-weight: bold;">
+
+    <div class="contenido">
+    <div class="gallery-container">
+        <p class="instruction-text">!!CLICK TO VIEW GALLERY!!</p>
+        <!-- Gallery 1: SQL -->
+        <a href="#" class="gallery-link" id="sqlGalleryLink">//Relation databases (SQL)//</a>
+        <ul class="gallery sql-gallery">
+            <li class="gallery-item"><img src="images/SQL/SQLDiagram1.png" alt="SQL Image 1"></li>
+            <li class="gallery-item"><img src="images/SQL/SQLDiagram2.png" alt="SQL Image 2"></li>
+            <li class="gallery-item"><img src="images/SQL/SQLDiagram3.png" alt="SQL Image 3"></li>
+            <li class="gallery-item"><img src="images/SQL/SQLCreacionTablas.png" alt="SQL Image 4"></li>
+            <li class="gallery-item"><img src="images/SQL/SQL5.png" alt="SQL Image 5"></li>
+            <li class="gallery-item"><img src="images/SQL/SQL6.png" alt="SQL Image 6"></li>
+            <li class="gallery-item"><img src="images/SQL/SQL7.png" alt="SQL Image 7"></li>
+            <li class="gallery-item"><img src="images/SQL/SQL8.png" alt="SQL Image 8"></li>
+            <li class="gallery-item"><img src="images/SQL/SQL9.png" alt="SQL Image 9"></li>
+            <li class="gallery-item"><img src="images/SQL/System_Writes_to_Database.png" alt="SQL Image 10"></li>
+
+
+            <!-- Add more items for SQL gallery as needed -->
+        </ul>
+        
+        <!-- Gallery 2: SSIS -->
+        <a href="#" class="gallery-link" id="ssisGalleryLink">//Microsoft Integration Services (SSIS) Packages//</a>
+        <ul class="gallery ssis-gallery">
+            <li class="gallery-item"><img src="images/SSIS/Data Flow Task.png" alt="SSIS Image 1"></li>
+            <li class="gallery-item"><img src="images/SSIS/Data Flow Task.png" alt="SSIS Image 2"></li>
+            <li class="gallery-item"><img src="images/SSIS/OLE DB Connection_DESTINATION.png" alt="SSIS Image 3"></li>
+            <li class="gallery-item"><img src="images/SSIS/Flat File Source Data Flow.png" alt="SSIS Image 4"></li>
+            <li class="gallery-item"><img src="images/SSIS/Execute package.png" alt="SSIS Image 5"></li>
+            <li class="gallery-item"><img src="images/SSIS/package execution success.png" alt="SSIS Image 6"></li>
+            <li class="gallery-item"><img src="images/SSIS/package execution success2.png" alt="SSIS Image 7"></li>
+            <li class="gallery-item"><img src="images/SSIS/Inserted data to SQL table using SSIS.png" alt="SSIS Image 8"></li>
+
+
+            <!-- Add more items for SSIS gallery as needed -->
+        </ul>
+
+        <!-- Placeholder Gallery 1 -->
+        <a href="#" class="gallery-link" id="awsrdsGalleryLink">//Amazon Cloud Computing Data Base(AWS-RDS)//</a>
+        <ul class="gallery awsrds-gallery">
+            <li class="gallery-item"><img src="images/AWS_RDS/AWS1.png" alt="AWSrds1"></li>
+            <li class="gallery-item"><img src="images/AWS_RDS/AWS2.png" alt="AWSrds2"></li>
+            <li class="gallery-item"><img src="images/AWS_RDS/AWS3.png" alt="AWSrds3"></li>
+            <li class="gallery-item"><img src="images/AWS_RDS/AWS4.png" alt="AWSrds4"></li>
+            <li class="gallery-item"><img src="images/AWS_RDS/AWS5.png" alt="AWSrds5"></li>
+            <li class="gallery-item"><img src="images/AWS_RDS/AWS6.png" alt="AWSrds6"></li>
+            <li class="gallery-item"><img src="images/AWS_RDS/AWS7.png" alt="AWSrds7"></li>
+
+            <!-- Add more items for Placeholder Gallery 1 as needed -->
+        </ul>
+
+
+        <!-- Repeat the pattern for additional placeholder galleries -->
+        <!-- <a href="#" class="gallery-link" id="placeholderGalleryLink3">Placeholder Gallery 3</a> ... -->
+
+    </div>
+</div>
+
+<script>
+    // JavaScript to handle gallery links
+    document.getElementById("sqlGalleryLink").addEventListener("click", function() {
+        showGallery("sql-gallery");
+    });
+
+    document.getElementById("ssisGalleryLink").addEventListener("click", function() {
+        showGallery("ssis-gallery");
+    });
+
+    document.getElementById("awsrdsGalleryLink").addEventListener("click", function() {
+        showGallery("awsrds-gallery");
+    });
+
+  
+
+    // Function to show a specific gallery and hide others
+    function showGallery(galleryId) {
+        const galleries = document.querySelectorAll(".gallery");
+        galleries.forEach(function(gallery) {
+            gallery.style.display = "none";
+        });
+
+        const selectedGallery = document.querySelector("." + galleryId);
+        selectedGallery.style.display = "flex";
+    }
+</script>
+
+</body>
+</html>
