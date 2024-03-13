@@ -1,4 +1,18 @@
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Click event listener for desktop users
+    document.getElementById("portfolioLink").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        window.location.href = "portfoliotab.html"; // Redirect to the portfolio tab page
+    });
+
+    // Touch event listener for touch devices
+    document.getElementById("portfolioLink").addEventListener("touchstart", function(event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        window.location.href = "portfoliotab.html"; // Redirect to the portfolio tab page
+    });
+});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     // Click event listeners for touch devices
