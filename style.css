@@ -121,7 +121,7 @@ span{
     height: 55%;
     position: absolute;
     left: 93%;
-    bottom: 10%; 
+    bottom: 35%; 
     right: 10px;
     transform: translateX(-40%);
     transition: bottom 1s, left 1s;
