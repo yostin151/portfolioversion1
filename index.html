@@ -1,144 +1,50 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=20.0">
+    <meta charset="UTF-8">
+    <title>Yostin Poveda website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cv.js" defer></script>
+    <script src="portfoliotab.js" defer></script>"
 
 
-.hero{
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    background-image: url('images/BACKGROUND.png');
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size:100% 100%;
-    background-position:  b;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;    
-    
-}
-
-.hero nav ul {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1; /* Ensure the link is above other elements */
-}
+</head>
 
 
-.hero.images
-{
-    background:transparent;
-}
+    <body link="red" alink="green" vlink="pink" bgcolor="#DFD3E3">
+    <div class = "hero"> 
+        <nav>
+            <img src="images/LOGO.png" alt="LOGO">
+            <ul>
+                <li><a href="portfoliotab.html" id= "portfolioLink" class="link" style="color: #B048B5">!CLICK HERE PORTFOLIO! </a></li> 
+                 <!-- <li><a href="">HOME</a></li>
+                 <!-- <li><a href="#">IN DEVELOPMENT</a></li> <!-- ABOUT -->
+                 <!-- <li><a href="#">IN DEVELOPMENT</a></li> <!-- EDUCATION-CERTIFICATIONS -->
+                <!-- Add more menu items as needed -->
+            </ul>
+        
+        </nav>
+        <div class ="main" style= "margin-left:8%; margin-top: -20px;">
+        <h1>Nice to see you here, I'm <span>Yostin Poveda </span></h1>
+        <p>This is my portfolio Website, feel free to take a look around!</p>
+        <p>
+            It contains info about my skills, work experience and other cool projects I have worked in my Professional career as well in my University studies.
+        </p>
+        <p> <br>
+            11 years working in multinational Companies, with a Bachelors degree in English Teaching & currently pursuing my second degree in Computer Science (60%)
+        </br></p>
+    <a href="#" id="downloadCvButton" class= "download-button"> DOWNLOAD CV</a>
+    <a href="https://www.linkedin.com/in/yostin-poveda-b1874598/" class= "link"> 
+        <img src= "images/LINKEDIN.png" alt="LINKEDIN ">
+    </a>
+</div>
+    </div>
+    <div class ="images">
+   
+        <img src = "images/SHAPE.png" class="SHAPE">
+        <img src = "images/boy.png" class="boy">
+    </div>
 
-.hero nav img 
-{
-    background:transparent;
-}
-
-
-nav{
-    display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
-    align-items: center;
-    justify-content: space-between;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 1.6em;
-}
-nav ul li a:hover{
-    color: red;
-}
-.main{
-    margin-left: 8%;
-    margin-top: 150px; 
-    position: relative;
-}
-.main h1{
-    font-size: 50px;
-    color:#212121;    
-    margin-bottom: 20px;
-
-}
-
-span{
-    color:rgb(169, 27, 213)
-}
-
-.main p{
-    color:#212121;
-    line-height: 22px;
-    font-size: 1.2;
-
-}
-
-.hero .download-button{
-    background: black;
-    padding: 10px 18px; 
-    text-decoration: none; 
-    font-weight: bold;
-    color: white;
-    display: inline-block;
-    margin: 30px 0; 
-    border-radius: 5px;
-}
-.hero .link {
-    background: black;
-    padding: 5px 5px; 
-    text-decoration: none; 
-    font-weight: bold;
-    display: inline-block;
-    margin: 30px 0; 
-    border-radius: 5px;
-    position: relative;
-    bottom: -3%; /* Adjust the bottom distance */
-    right: -1%; /* Adjust the right distance */
-}
-
-.images{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 1%; 
-}
-.images img.boy{
-  
-    background-color: transparent;
-    height: 55%;
-    position: absolute;
-    left: 93%;
-    bottom: 35%; 
-    right: 10px;
-    transform: translateX(-40%);
-    transition: bottom 1s, left 1s;
-}
-
-.images img.LOGO
-{
-    background-color: transparent;
-}
-
-.images img.boy:hover{
-    left: 80%
-}
-
-.images img.SHAPE {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-  
-}
+</body>
+</html>
