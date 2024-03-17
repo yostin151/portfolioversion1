@@ -64,6 +64,55 @@
         </ul>
 
 
+        <!-- Placeholder Gallery 2 -->
+        <a href="#" class="gallery-link" id="CSHARPGalleryLink">//C#//</a>
+        <ul class="gallery CSHARP-gallery">
+            <li class="gallery-item"><img src="images/CSHARP/CSHARP1.png" alt="C1"></li>
+            <li class="gallery-item"><img src="images/CSHARP/CSHARP2.png" alt="C2"></li>
+            <li class="gallery-item"><img src="images/CSHARP/CSHARP3.png" alt="C3"></li>
+            <li class="gallery-item"><img src="images/CSHARP/CSHARP4.png" alt="C4"></li>
+ 
+
+     <!-- Add more items for Placeholder Gallery 1 as needed -->
+ </ul>
+
+
+     <!-- Placeholder Gallery 3 -->
+     <a href="#" class="gallery-link" id="JAVAGalleryLink">//JAVA//</a>
+     <ul class="gallery JAVA-gallery">
+         <li class="gallery-item"><img src="images/JAVA/JAVA1.png" alt="JAVA1"></li>
+         <li class="gallery-item"><img src="images/JAVA/JAVA2.png" alt="JAVA2"></li>
+         <li class="gallery-item"><img src="images/JAVA/JAVA3.png" alt="JAVA3"></li>
+         <li class="gallery-item"><img src="imageS/JAVA/JAVA4.png" alt="JAVA4"></li>
+         <li class="gallery-item"><img src="imageS/JAVA/JAVA5.png" alt="JAVA5"></li>
+
+  <!-- Add more items for Placeholder Gallery 1 as needed -->
+</ul>
+
+
+    <a href="#" class="gallery-link" id="PYTHONGalleryLink">//PYTHON//</a>
+    <ul class="gallery PYTHON-gallery">
+        <li class="gallery-item"><img src="images/Python/Python1.png" alt="PYTHON1"></li>
+        <li class="gallery-item"><img src="images/Python/Python2.png" alt="PYTHON2"></li>
+        <li class="gallery-item"><img src="images/Python/python3.png" alt="PYTHON3"></li>
+        <li class="gallery-item"><img src="images/Python/PYTHON4.png" alt="PYTHON4"></li>
+        <li class="gallery-item"><img src="imageS/Python/PYTHON5.png" alt="PYTHON5"></li>
+
+<!-- Add more items for Placeholder Gallery 1 as needed -->
+</ul>
+
+
+
+    <a href="#" class="gallery-link" id="VisualBasicGalleryLink">//Visual Basic .NET Framework//</a>
+        <ul class="gallery VisualBasic-gallery">
+        <li class="gallery-item"><img src="images/Visual Basic.Net Windows Forms/VisBasic1.png" alt="VisualBasic1"></li>
+        <li class="gallery-item"><img src="images/Visual Basic.Net Windows Forms/VISBASIC2.png" alt="VisualBasic2"></li>
+        <li class="gallery-item"><img src="images/Visual Basic.Net Windows Forms/VISBASIC3.png" alt="VisualBasic3"></li>
+        <li class="gallery-item"><img src="images/Visual Basic.Net Windows Forms/VISBASIC4.png" alt="VisualBasic4"></li>
+     
+<!-- Add more items for Placeholder Gallery 1 as needed -->
+</ul>
+
         <!-- Repeat the pattern for additional placeholder galleries -->
         <!-- <a href="#" class="gallery-link" id="placeholderGalleryLink3">Placeholder Gallery 3</a> ... -->
 
@@ -84,7 +133,21 @@
         showGallery("awsrds-gallery");
     });
 
+    document.getElementById("CSHARPGalleryLink").addEventListener("click", function() {
+        showGallery("CSHARP-gallery");
+    });
   
+    document.getElementById("JAVAGalleryLink").addEventListener("click", function() {
+        showGallery("JAVA-gallery");
+    });
+  
+    document.getElementById("PYTHONGalleryLink").addEventListener("click", function() {
+        showGallery("PYTHON-gallery");
+    });
+  
+    document.getElementById("VisualBasicGalleryLink").addEventListener("click", function() {
+        showGallery("VisualBasic-gallery");
+    });
 
     // Function to show a specific gallery and hide others
     function showGallery(galleryId) {
