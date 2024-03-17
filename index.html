@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <div id="mobileMessageContainer" style="display: none;">
+        <p>This website is best viewed in desktop mode. Please switch to desktop mode for the optimal experience.</p>
+        <p>If you're using a mobile device, you can <a href="#" id="desktopModeLink">switch to desktop mode</a> for better viewing.</p>
+    </div>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Function to display the mobile message
+        function showMobileMessage() {
+            const mobileMessageContainer = document.getElementById("mobileMessageContainer");
+            mobileMessageContainer.style.display = "block";
+        }
+    
+        // Function to detect if the user is on a mobile device
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+    
+        // Check if the user is on a mobile device and display the message
+        if (isMobileDevice()) {
+            showMobileMessage();
+        }
+    
+        // You can add an event listener to the link to provide instructions on how to switch to desktop mode
+        const desktopModeLink = document.getElementById("desktopModeLink");
+        desktopModeLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            // You can provide instructions here on how to switch to desktop mode, or redirect to another page with instructions
+            alert("To switch to desktop mode, please follow the instructions provided by your device's manufacturer.");
+        });
+    });
+    </script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=20.0">
     <meta charset="UTF-8">
     <title>Yostin Poveda website</title>
@@ -46,5 +80,7 @@
         <img src = "images/boy.png" class="boy">
     </div>
 
+
+  
 </body>
 </html>
